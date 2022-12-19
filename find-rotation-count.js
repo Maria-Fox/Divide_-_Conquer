@@ -1,3 +1,16 @@
+// With Kwame's help. 
+// findRotationCount([15, 18, 2, 3, 6, 12]) // 2
+// SO - review input, view in regular ascending order.
+
+// (ONE ROTAION = MOVING LAST ITEM TO FRONT OF ARR)
+// using the above input - 
+// 2 3 6 12 15 18 - WOULD BE REGULAR ASC. ORDER
+// 18 2 3 6 12 15 - ONE ROTATION 
+// 15 18 2 3 6 12 - TWO ROTATIONS - ****WHAT INPUT LOOKS LIKE******
+// 12 15 18 2 3 6 - THREE ROTATIONS
+// 6 12 15 18 2 3 - FOUR ROTAITONS
+
+
 function findRotationCount(arr) {
   // get usual pointers
   let upper = arr.length - 1;
